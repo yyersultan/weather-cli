@@ -1,27 +1,69 @@
 {
+  
   "name": "weather-cli",
+  
   "version": "1.0.0",
+  
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  
+  "main": "weather.js",
+  
+  "bin": {
+  
+    
+  "weather": "./weather.js"
+  
+  },
+  
+  "type": "module",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  
+    
+  "test": "echo \"Error: no test specified\" && exit 1"
+  
   },
+  
   "keywords": [
-    "cli",
-    "weather"
+  
+    
+  "cli",
+  
+    
+  "weather"
+  
   ],
+  
   "author": "Yersultan Yerkinbek",
+  
   "license": "ISC",
+  
   "homepage": "https://purpleschool.ru",
+  
   "repository": {
-    "type": "https://purpleschool.ru"
+  
+    
+  "type": "https://purpleschool.ru"
+  
   },
+  
   "bugs": {
-    "url": "https://purpleschool.ru",
-    "email": "yersultanyerkinbek01@gmail.com"
+  
+    
+  "url": "https://purpleschool.ru",
+  
+    
+  "email": "yersultanyerkinbek01@gmail.com"
+  
   },
+  
   "dependencies": {
-    "axios": "^0.24.0"
+  
+    
+  "axios": "^0.24.0",
+  
+    
+  "chalk": "^5.0.0"
+  
   }
 }
