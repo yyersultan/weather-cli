@@ -17,5 +17,13 @@ Without paramter - enter weather
 -t [API_KEY] to store token 
     `);
 }
-
-export {printError,printSuccess,printHelp};
+const printWeather = (response,icon) => {
+    console.log(`
+${chalk.bgYellow('WEATHER')} Weather in city: ${response.name}
+${icon}  ${response.weather[0].description} 
+Temperature: ${response.main.temp} (feels like ${response.main.feels_like})
+Humidity: ${response.main.humidity}%
+Wind Speed: ${response.wind.speed}m/s
+`);
+}
+export {printError,printSuccess,printHelp,printWeather};
